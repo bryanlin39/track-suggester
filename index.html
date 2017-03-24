@@ -7,6 +7,7 @@
     <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
   </head>
+
   <body>
     <div class="container-fluid">
       <div id="heading">
@@ -21,13 +22,12 @@
             <label for="name">Name:</label>
             <input id="name-input" class="form-control" type="text" placeholder="e.g. John Johnson" required>
           </div>
-          <button type="button" class="btn btn-primary btn-lg" name="start" id="start-button">Start</button>
+          <button type="submit" class="btn btn-primary btn-lg" name="start" id="start-button">Start</button>
         </form>
       </div>
 
       <div id="survey-form">
         <form id="survey">
-
           <!-- question1 -->
           <h4>Are you a creative person that likes to make visually beautiful designs?</h4>
           <div class="radio">
@@ -139,12 +139,11 @@
           </select>
 
           <button type="submit" class="btn btn-primary" name="submit" id="submit-button">Submit</button>
-
         </form>
       </div><!-- form -->
 
       <div id="result">
-        <h2>Your suggested programming track is <span id="suggestion"></span>!</h2>
+        <h2><span id="submitted-name"></span>, your suggested programming track is <u><span id="suggestion"></span></u>!</h2>
 
         <p>Check out these links below to learn more about <span id="suggestion"></span>.</p>
         <ul id="design-links">
