@@ -14,11 +14,28 @@
         <h3>With all of the programming languages available today, it can be difficult for new students to decide which languages to learn. This app will help point students in the right direction by suggesting a track to start with based on their interests, personality, and strengths.</h3>
       </div>
 
-      <div id="form">
+      <!-- <div id="start">
+        <h2>Answer a brief survey to see your suggestion!</h2>
+        <button type="button" class="btn btn-primary btn-lg" name="start" id="start-button">Start</button>
+      </div> -->
+
+      <div id="start">
+        <h3>Answer a brief survey to see your suggestion. To start, please enter your name below.</h3>
+        <form id="name">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input id="name-input" class="form-control" type="text" placeholder="e.g. John Johnson" required>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" name="start" id="start-button">Start</button>
+      </div>
+
+      <div id="survey-form">
         <form id="survey">
-          
+          <div class="">
+          <button type="submit" name="submit">Submit Responses</button>
         </form>
       </div><!-- form -->
+
     </div><!-- overall container -->
   </body>
 </html>
