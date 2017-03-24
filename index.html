@@ -14,11 +14,6 @@
         <h3>With all of the programming languages available today, it can be difficult for new students to decide which languages to learn. This app will help point students in the right direction by suggesting a track to start with based on their interests, personality, and strengths.</h3>
       </div>
 
-      <!-- <div id="start">
-        <h2>Answer a brief survey to see your suggestion!</h2>
-        <button type="button" class="btn btn-primary btn-lg" name="start" id="start-button">Start</button>
-      </div> -->
-
       <div id="start">
         <h3>Answer a brief survey to see your suggestion. To start, please enter your name below.</h3>
         <form id="name">
@@ -27,12 +22,124 @@
             <input id="name-input" class="form-control" type="text" placeholder="e.g. John Johnson" required>
           </div>
           <button type="button" class="btn btn-primary btn-lg" name="start" id="start-button">Start</button>
+        </form>
       </div>
 
       <div id="survey-form">
         <form id="survey">
-          <div class="">
-          <button type="submit" name="submit">Submit Responses</button>
+
+          <!-- question1 -->
+          <h4>Are you a creative person that likes to make visually beautiful designs?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="creative" value="yes">
+              Yes, I love aesthetics
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="creative" value="no">
+              No, I don't even know what a color is
+            </label>
+          </div>
+
+          <!-- question2 -->
+          <h4>What type of company do you want to work for?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="large">
+              Large tech company
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="enterprise">
+              Traditional enterprise
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="startup">
+              Startup
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="small">
+              Small business/freelance
+            </label>
+          </div>
+
+          <!-- question3 -->
+          <h4>Would you rather would on web or mobile development?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="dev-type" value="web">
+              Web development
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="dev-type" value="mobile">
+              Mobile development
+            </label>
+          </div>
+
+          <!-- question4 -->
+          <h4>Are you interested in making games?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="games" value="yes">
+              Yes, games are awesome
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="games" value="no">
+              No, games are for children
+            </label>
+          </div>
+
+          <!-- question5 -->
+          <h4>What do you want to build?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="business">
+              Business software
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="android">
+              Android applications
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="content">
+              Content-based websites
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="build" value="interactive">
+              Interactive web applications
+            </label>
+          </div>
+
+          <!-- email -->
+          <div class="form-group">
+            <label for="email">Please enter your email below to receive a copy of your selections and suggestion:</label>
+            <input id="email" class="form-control" type="text" placeholder="e.g. john@email.com">
+          </div>
+          <p>Would you like to receive additional information and notices from us?</p>
+          <select class="form-control" id="record-email">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary" name="submit" id="submit-button">Submit</button>
+
         </form>
       </div><!-- form -->
 
