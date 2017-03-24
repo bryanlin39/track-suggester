@@ -13,9 +13,6 @@ $(document).ready(function() {
   $("#survey").submit(function(event) {
     event.preventDefault();
 
-    $("#survey-form").slideUp();
-    $("#result").slideDown();
-
     var creative = $("input:radio[name=creative]:checked").val();
     var company = $("input:radio[name=company]:checked").val();
     var devType = $("input:radio[name=dev-type]:checked").val();
@@ -41,9 +38,11 @@ $(document).ready(function() {
       $("#ruby-links").show()
     }
 
+    $("#survey-form").slideUp();
+    $("#result").slideDown();
+
     var email = $("#email-input").val();
     $("#submitted-email").text(email);
-
   });
 
 });

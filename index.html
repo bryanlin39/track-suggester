@@ -26,7 +26,7 @@
         </form>
       </div>
 
-      <div id="survey-form">
+      <div class="well" id="survey-form">
         <form id="survey">
           <!-- question1 -->
           <h4>Are you a creative person that likes to make visually beautiful designs?</h4>
@@ -71,7 +71,7 @@
           </div>
 
           <!-- question3 -->
-          <h4>Would you rather would on web or mobile development?</h4>
+          <h4>Would you rather work on web or mobile development?</h4>
           <div class="radio">
             <label>
               <input type="radio" name="dev-type" value="web">
@@ -96,7 +96,7 @@
           <div class="radio">
             <label>
               <input type="radio" name="games" value="no">
-              No, games are for children
+              No, games are for kids
             </label>
           </div>
 
@@ -132,7 +132,7 @@
             <label for="email">Please enter your email below to receive a copy of your selections and your suggested track:</label>
             <input id="email-input" class="form-control" type="text" placeholder="e.g. john@email.com" required>
           </div>
-          <p>Would you like to receive emails with additional information and notices from us?</p>
+          <h4>Would you like to receive emails with additional information and notices from us?</h4>
           <select class="form-control" id="record-email">
             <option>Yes</option>
             <option>No</option>
@@ -140,12 +140,12 @@
 
           <button type="submit" class="btn btn-primary" name="submit" id="submit-button">Submit</button>
         </form>
-      </div><!-- form -->
+      </div>
 
-      <div id="result">
+      <div class="well" id="result">
         <h2><span id="submitted-name"></span>, your suggested programming track is <span class="suggestion"></span>!</h2>
 
-        <p>We will send a copy of your selections and your suggested track to your email: <u><span id="submitted-email"></span></u>. In the meantime, check out the links below to learn more about <span class="suggestion"></span>.</p>
+        <p>We will send a copy of your selections and your suggested track to <u><span id="submitted-email"></span></u>. In the meantime, check out the links below to learn more about <span class="suggestion"></span>.</p>
         <ul id="design-links">
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS documentation</a></li>
           <li><a href="https://www.epicodus.com/">Kick off your new career by signing up for the CSS/Design track at Epicodus now!</a></li>
@@ -173,6 +173,6 @@
         </ul>
       </div>
 
-    </div><!-- overall container -->
+    </div>
   </body>
 </html>

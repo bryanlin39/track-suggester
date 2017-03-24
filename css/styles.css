@@ -8,8 +8,9 @@
 
 .jumbotron {
   margin: 30px;
-  background-color: #d6e4f9;
+  background-color: #e5f3ff;
   text-align: justify;
+  box-shadow: 3px 3px 2px #7487a5;
 }
 
 h1 {
@@ -19,6 +20,12 @@ h1 {
 
 #start {
   margin: 30px;
+}
+
+.well {
+  background-color: #e5f3ff;
+  margin: 30px;
+  box-shadow: 3px 3px 2px #7487a5;
 }
 
 form {
@@ -33,6 +40,9 @@ label {
   font-weight: bold;
 }
 
+#submit-button {
+  margin-top: 25px;
+}
 
 h2 .suggestion {
   background-color: #fcfbbd;
