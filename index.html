@@ -10,13 +10,13 @@
 
   <body>
     <div class="container-fluid">
-      <div id="heading">
+      <div class="jumbotron" id="heading">
         <h1>Choosing the Right Programming Track</h1>
         <h3>With all of the programming languages available today, it can be difficult for new students to decide which languages to learn. This app will help point students in the right direction by suggesting a track to start with based on their interests, personality, and strengths.</h3>
       </div>
 
       <div id="start">
-        <h3>Answer a brief survey to see your suggestion. To start, please enter your name below.</h3>
+        <h4>Answer a brief survey to see your suggestion. To start, please enter your name below.</h4>
         <form id="name">
           <div class="form-group">
             <label for="name">Name:</label>
@@ -130,9 +130,9 @@
           <!-- email -->
           <div class="form-group">
             <label for="email">Please enter your email below to receive a copy of your selections and your suggested track:</label>
-            <input id="email" class="form-control" type="text" placeholder="e.g. john@email.com">
+            <input id="email-input" class="form-control" type="text" placeholder="e.g. john@email.com" required>
           </div>
-          <p>Would you like to receive additional information and notices from us?</p>
+          <p>Would you like to receive emails with additional information and notices from us?</p>
           <select class="form-control" id="record-email">
             <option>Yes</option>
             <option>No</option>
@@ -143,9 +143,9 @@
       </div><!-- form -->
 
       <div id="result">
-        <h2><span id="submitted-name"></span>, your suggested programming track is <u><span id="suggestion"></span></u>!</h2>
+        <h2><span id="submitted-name"></span>, your suggested programming track is <span class="suggestion"></span>!</h2>
 
-        <p>Check out these links below to learn more about <span id="suggestion"></span>.</p>
+        <p>We will send a copy of your selections and your suggested track to your email: <u><span id="submitted-email"></span></u>. In the meantime, check out the links below to learn more about <span class="suggestion"></span>.</p>
         <ul id="design-links">
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS documentation</a></li>
           <li><a href="https://www.epicodus.com/">Kick off your new career by signing up for the CSS/Design track at Epicodus now!</a></li>

@@ -1,3 +1,41 @@
-/*#survey-form, #result {
+#survey-form, #result {
   display: none;
-}*/
+}
+
+#result ul {
+  display: none;
+}
+
+.jumbotron {
+  margin: 30px;
+  background-color: #d6e4f9;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#start {
+  margin: 30px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+#survey-form h4 {
+  font-weight: bold;
+}
+
+
+h2 .suggestion {
+  background-color: #fcfbbd;
+  color: #db3030;
+  font-weight: bold;
+}
